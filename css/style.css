@@ -16,15 +16,23 @@ body {
 }
 
 .navbar__logo {
-    padding-left: 3em;
-    padding-bottom: 1.4em;
+    font-size: 1.5rem;
+    margin: .5rem;
+
 }
 
 .navbar__logo:hover {
     cursor: pointer;
 }
+.navbar__section {
+    margin-top: .5rem;
+    align-items: center;
+
+}
 
 .navbar__list {
+    margin: 0;
+    padding: 0%;
     display: flex;
     list-style: none;
     align-items: center;
@@ -79,22 +87,27 @@ li a:hover::after {
     }
 
     .navbar__logo {
-        padding-top:1em;
+        padding-top:.4em;
     }
 
     .navbar--link {
-        display: none;
         width: 100%;
-      
+        text-align: center;
     }
 
+    .navbar__section {
+        display: none;
+    }
 
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .navbar__list {
+    .navbar__section {
+        width: 100%;
+    }
+    .navbar__section ul {
+        display: flex;
         flex-direction: column;
         width: 100%;
         justify-content: center;
@@ -107,7 +120,7 @@ li a:hover::after {
         width:100%;
     }
 
-    .navbar__list.active {
+    .navbar__section.active {
         display: flex;
     }
 }
