@@ -24,7 +24,6 @@ fetch(`${proxyUrl}${baseUrl}`,{
 
             coinsData.forEach((coin) => {
                 cryptoCoins += "<tr>"
-                cryptoCoins += `<td>${coin.uuid}</td>`;
                 cryptoCoins += `<td>${coin.name}</td>`;
                 cryptoCoins += `<td>${coin.symbol}</td>`;
                 cryptoCoins += `<td>${parseFloat(coin.btcPrice).toFixed(4)}</td>`;

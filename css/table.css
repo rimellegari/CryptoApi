@@ -1,18 +1,41 @@
 .table-container {
     margin-top: 2em;
     margin-left: 10%;
-    width: 100%;
+    width: 100vw
 }
 
 .table-api {
     width: 80%;
+    border-collapse: collapse;
 }
 
 .table-api th {
     width: 16%;
     text-align: center;
+    background-color: #002358;
+    color: white; 
 }
 
 .table-api td {
     text-align: center;
+}
+
+.table-header:first-of-type {
+    border-top-left-radius: 5px;
+}
+
+.table-header-end {
+    border-top-right-radius: 5px;
+}
+
+/*table rows*/
+.table-api:nth-child(odd){
+    background-color: white;
+}
+
+#data tr:nth-child(even){
+    background-color: #d4d4d4
+}
+#data tr:hover{
+    font-weight: bold;
 }

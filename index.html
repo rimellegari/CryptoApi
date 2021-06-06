@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,19 +27,18 @@
         </nav>
         <hr>
         <form class='lookfor'action="" method="post">
-            <input type="search">
-            <button type="submit">Search</button>
+            <input type="text" onkeyup="filtro()" placeholder="Search for crypto name..." id="form-input">
+
         </form>
         <main class="table-container">
             <table class="table-api">
                 <thead>
                     <tr>
-                        <th>uuid</th>
-                        <th>Name</th>
+                        <th  class="table-header">Name</th>
                         <th>Symbol</th>
                         <th>BTC price</th>
                         <th>Rank</th>
-                        <th>Price</th>
+                        <th class="table-header-end">Price</th>
                     </tr>
                 </thead>
                 <tbody id="data">
@@ -46,7 +46,8 @@
                 </tbody>
             </table>
         </main>
-    <script src="./js/app.js"></script>
     <script src="./js/api.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
